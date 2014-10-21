@@ -336,11 +336,11 @@
                     <!-- TODO write a div.social-links. -->
                         <!-- TODO inside that div, write a link that links to the social media links, and use the social media images in the image folder. -->
                             <!-- TODO Facebook http://facebook.com/ChavezATX -->
-                            <a href="http://facebook.com/ChavezATX"><a img src="images/facebook.png"></a></a>
+                            <a href="http://facebook.com/ChavezATX"><img src="images/facebook.png"></a>
                             <!-- TODO Twitter http://twitter.com/ChavezATX -->
-                            <a href="http://twitter.com/ChavezATX"><a img src="images/twitter.png"></a></a>
+                            <a href="http://twitter.com/ChavezATX"><img src="images/twitter.png"></a>
                             <!-- TODO Instagram http://instagram.com/ChavezATX -->
-                            <a href="http://instagram.com/ChavezATX"><a img src="images/instagram.png"></a></a>
+                            <a href="http://instagram.com/ChavezATX"><img src="images/instagram.png"></a>
                 </div>
                 </div>
                 
@@ -367,6 +367,21 @@
 
         <!-- Slick.js Slideshow -->
         <!-- TODO link to the slick.min.js file -->
+        <script src="js/slick.min.js"></script>
+        <script>
+            $('#slides').slick(
+                {
+                autoplay: true,
+                autoplaySpeed: 2000,
+                fade: true,
+                cssEase: 'linear',
+                dots: true,
+                slide: '> div'
+                }
+
+                );
+        </script>
+
         <!-- TODO pass the div #slides into the .slick() function to make the slideshow work. you'll be able to tell if it works because the images will no longer be a stack; you'll only see the first one. -->
         <!-- TODO by default this slideshow JS doesn't autoplay. can you add the following settings into the slick() function? autoplay: true, autoplaySpeed: 2000, fade: true, cssEase: 'linear'. Check out the http://kenwheeler.github.io/slick/ website for examples and how to's! -->
 
