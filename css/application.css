@@ -4,12 +4,13 @@
 
 body {
     margin: 0;
-    /* TODO use the Google Font 'Bitter' */
+    font-family: 'Bitter', serif;
     font-size: 100%;
 }
 
 div, h1, h2, h3, h4, h5, h6, p, ul, ol, a {
     /* TODO because we are using Foundation, we have to override Foundation's default font family. Use the Google Font 'Bitter' here. */
+    font-family: 'Bitter', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,19 +26,34 @@ header {}
 header h1 {
     /* TODO make the font size larger than Foundation's default; I uesd 4.5em */
     /* TODO add a text-shadow on the h1 using rgba(34, 28, 18,.75) */
+    font-size: 4.5em;
+    text-shadow: rgba(34, 28, 18,.75);
+    color: #ffffff;
+    text-align: center;
 }
 
 header .tagline h4 {
     /* TODO make the tagline italic; you'll have to work hard to override Foundation's font-style: normal on all headers! */
     /* TODO add the same text-shadow */
+     font-style: italic;
+     text-shadow: rgba(34, 28, 18,.75);
+     color: #ffffff;
+    text-align: center;
 }
 
 header .tagline {
     /* TODO center the text */
     background: rgba(34, 28, 18,.5); /* I added this transparent background bar for you. */
     /* TODO add some padding to give it space around the text */
+    padding: 100px;
     /* TODO absolutely position the tagline bar at top: 35%. add a width so that it goes all the way across. */
+    position: absolute;
+    width: 100%;
+    top: 35%;
     /* TODO when you make the slideshow work, the tagline will get hidden. why? what line of CSS do you have to write to make it appear ABOVE the slideshow? */
+    z-index: 4;
+    color: #ffffff;
+    text-align: center;
 }
 
 
