@@ -52,20 +52,14 @@
         </header>
 
         <!-- Address, map, hours -->
-    <div class="row">
-        <div class="small-12 columns"
-        <section class="address">
-            <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
-                    111 E Cesar Chavez St, Austin, TX 78701
-        </div>
-    </div>
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
+        <section class="address">                
     <div class="row">
         <div class="small-12 large-4 columns">
                 <div class="location">
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    <a href="www.chavez-austin.com">CHAVEZ AUSTIN</a>
-                    at the Radisson Hotel
+                    <a href="www.chavez-austin.com">at the Radisson Hotel</a>
+                </br>
                     111 east cesar chavez
                     austin, texas 78701
                     <a href="tel:+15124782291">512.478.2291</a>
@@ -80,10 +74,13 @@
         <div class="small-12 large-4 columns">
                 <div class="hours">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
-                    breakfast: 6:30–11am
-                    lunch: 11am–3pm
-                    limited menu: 3–5pm
-                    dinner: 5–10pm
+                     <span class="hours.label">breakfast:</span> <span class="hours.value">6:30–11am</span>
+                 </br>
+                     <span class="hours.label">lunch:</span> <span class="hours.value">11am–3pm</span>
+                 </br>
+                     <span class="hours.label">limited menu:</span> <span class="hours.value">3–5pm</span>
+                 </br>
+                     <span class="hours.label">dinner:</span> <span class="hours.value">5–10pm</span>
                 </div>
         </div>
     </div>            
@@ -188,16 +185,18 @@
             </div>     
 
             <!-- TODO add a foundation row to wrap around this content -->
+
+            <!-- Menu Items now handled by JSON 
             <div class="row">
                 <div id="menu-section-content" class="menu-section-content">
-                    <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
+                    <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes.
                     <div class="small-6 columns">   
 
                         <div class="menu-group">
-                            <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
+                            <!-- TODO Inside each .menu-group, there should be an h4 with the title.
                             <h4>Entrees</h4>
 
-                            <!-- TODO for each item on the menu, write a div.menu-item. -->
+                            <!-- TODO for each item on the menu, write a div.menu-item.
                             <div class="menu-item">
                                 <div class="menu-item-dish">Carne Asada</div>
                                 <p class="menu-item-ingredients">flank steak, grilled onions, “pico de gallo” </p>
@@ -259,9 +258,9 @@
 
                         <div class="menu-group">
                             <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
-                            <h4>Raw Bar</h4>
+                            <!-- <h4>Raw Bar</h4>
 
-                            <!-- TODO for each item on the menu, write a div.menu-item. -->
+                            <!-- TODO for each item on the menu, write a div.menu-item.
                             <div class="menu-item">
                                 <div class="menu-item-dish">Malpeque Oyster</div>
                                 <p class="menu-item-ingredients">prince edward island, canada</p>
@@ -310,7 +309,7 @@
                             </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </section>
 
