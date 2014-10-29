@@ -21,14 +21,14 @@ $(function() {
       event.preventDefault();
 
       // Assign the id of the clicked element (this) to a variable named id
-      var  = $( this );
+      var  = $( id );
 
       // Remove the class 'is-active' from all menu item headings
-      $( '' ).removeClass( '' );
+      $( 'this' ).removeClass( 'is-active' );
 
       // Add 'is-active' to this specific action that was clicked (this). is-active
       // provides the visual cue for what's active via CSS
-      $( this ).addClass( '' );
+      $( this ).addClass( 'is-active' );
 
       // Once you're started with TODO #2, call the getMenu function here,
       // passing id as the argument
@@ -69,7 +69,7 @@ $(function() {
 
       // start a for loop that iterates through json.length
       // add json.length into this for loop code
-      for( var i = 0; i < ; i++ ){
+      for( var i = json.length  ; i < ; i++ ){
         // wrap each section in a menu-group div
         html += '<div class="menu-group columns small-12 medium-4">';
         // append inside the menu-group div a h4 with the json section name in it
